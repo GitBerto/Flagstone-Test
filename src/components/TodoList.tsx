@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context as TodoContext } from "../context/TodoContext";
-import { deleteTodo } from "../actions/TodoActions";
+import { deleteTodos } from "../actions/TodoActions";
 
 const TodoList: React.FC = () => {
   const {
