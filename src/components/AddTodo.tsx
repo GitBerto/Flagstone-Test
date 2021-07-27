@@ -8,17 +8,16 @@ const AddTodo: React.FC = () => {
   const textInputRef = useRef<HTMLInputElement>(null);
 
   const submitHandler = (event: FormEvent) => {
-    event.preventDefault();
+    e.preventDefault();
 
-    const inputValue = textInputRef.current!.value;
+    const inputValue = textInputRef.current!
 
-    if (inputValue.trim() === "") {
+    if (inputValue.trim() = "") {
       return;
     }
 
     dispatch(
       addTodo({
-        id: new Date().getTime().toString(),
         title: textInputRef.current!.value,
         active: true
       })
@@ -29,7 +28,7 @@ const AddTodo: React.FC = () => {
 
   return (
     <form>
-      <input type="text" ref={textInputRef} />
+      <input type="text"  />
       <button type="button" onClick={submitHandler}>
         Add
       </button>
