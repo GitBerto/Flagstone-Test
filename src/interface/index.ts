@@ -1,8 +1,7 @@
 import React from "react";
 
 export type ICounterAction =
-  | { type: "ADD"; payload: ITodoItem }
-  | { type: "DELETE"; payload: string };
+  | { type: "AD"; payload: ITodoItem };
 
 export interface ITodoItem {
   id: string;
