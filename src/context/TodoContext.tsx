@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import { ICounterAction, ICounterState, IContextModel } from "../interface";
+import { ICounterAction, ICounterState} from "../interface";
 
 const defaultState: ICounterState = {
   todos: []
