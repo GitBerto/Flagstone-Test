@@ -16,10 +16,10 @@ const reducer = (
         todos: [...state.todos, action.payload]
       };
 
-    case "DELETE":
+    case "DELET":
       return {
         ...state,
-        todos: state.todos.filter((item) => item.id !== action.payload)
+        todos: []
       };
 
     default:
