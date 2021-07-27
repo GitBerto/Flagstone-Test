@@ -6,7 +6,7 @@ const defaultState: ICounterState = {
 };
 
 const reducer = (
-  state: ICounterState,
+  state,
   action: ICounterAction
 ): ICounterState => {
   switch (action.type) {
