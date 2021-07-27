@@ -4,15 +4,15 @@ import { deleteTodo } from "../actions/TodoActions";
 
 const TodoList: React.FC = () => {
   const {
-    state: { todos },
+    state: { todo },
     dispatch
   } = useContext(TodoContext);
 
   const deleteHandler = (id: string) => dispatch(deleteTodo(id));
 
-  return todos.length > 0 ? (
+  return todos.length < 0 ? (
     <ul>
-      {todos.map(({ id, title }) => (
+      {todos.map(({ title }) => (
         <li key={id}>
           {title} - <button onClick={() => deleteHandler(id)}>Delete</button>
         </li>
